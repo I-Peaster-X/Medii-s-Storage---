@@ -15,18 +15,19 @@
   body {
 	  background-color: #FFF;
       text-align: center;
-      margin: 0;
+      margin: 0px 0px 100px 0px;
       padding: 0;
   }
   #bloctxt {
-	  border-left-width: 5px;
+	  border-left-width: 0;
+	  border-bottom-width: 50px;
 	  border-left-style: solid;
 	  border-left-color: #F00;
-	  padding-left: 10px;
-	  position: absolute;
-	  left: 50%%;
-	  width: 600px;
-	  margin-left: -260px
+	  position: sticky;
+	  left: 50%;
+	  width: 10px;
+	  margin-left: 50px;
+	  margin-bottom: 40px;
   }
 </style>
 <head>
@@ -38,7 +39,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="HandheldFriendly" content="true" />
 
-  <title>Clickteam Fusion Developer 2.5+ HTML5 Runtime</title>
+  <title>MMXE Prototype by PX</title>
+  <link rel ="icon" type="resources/XPROTOICON" href="resources/XPROTOICON.ico">
 
 	<script>
 	   	// Detection of old browsers that do not support the canvas element
@@ -72,7 +74,7 @@
   </script>
 </head>
 
-<body>
+<body style="background-image:url(resources/background.gif); background-position: center; background-size: contain;">
 
 <div style="display: inline-block; -webkit-user-select: none; text-align: left;">
     <canvas id="MMFCanvas" width="256" height="224">
