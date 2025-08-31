@@ -8,51 +8,92 @@
         <input text="eee" id="name" name="2" value="50" hidden>
   </form>
   <style>
+    .epic {
+      border-left: 20%;
+      border-right: 20%;
+    }
     .ct {
+        margin-right: 20%;
+        margin-left: 20%;
         text-align: center;
     }
     .cd {
         text-align: bottom;
+        border-left: 20%;
+        border-right: 20%;
+        
     }
-    .texto{text-align: center; line-height: 80px;}
-    .text{line-height: 300px}
+    .texto{text-align: center; line-height: 80px; margin-left: 20%; margin-right: 20%;}
+    .text{line-height: 300px; color: aliceblue;}
   </style>
   <script>
         function playsound(vare){
             var music = new Audio('Sounds/SELECTOPTION.ogg');
+            if (vare === 0) {music = new Audio('Sounds/SELECTOPTION.ogg')}
             if (vare === 1){music = new Audio('Sounds/OVEROPTION.ogg')}
-            else
-            {new Audio('Sounds/SELECTOPTION.ogg')}
             music.play();
         }
   </script>
 </head>
+
 <body style="background-image:url(Images/background.gif); background-position: center; background-size: contain;">
-    <h1 class="texto">Welcome to my page!! -Medii</h1>
-    <p class="ct">I enjoy making projects for fun ^-^!!</p>
-    <div class="ct">
-        <img src="Images/X.gif" alt="Rockman X" width=10%>
-        <div>
-            <p class="ct">Check My Cool Projects/Places!!</p>
-            <button onmouseover="playsound(1)" onclick="playsound(2); window.location.href='MMXPROTOBYPX';">
-                RockManXPrototype
-            </button>
-        </div>
-        <audio controls loop="true" autoplay="true" style="position:sticky;top:400px;left:25%;right:25%;width:250px;">
-          <source src="Sounds/Main.ogg" type="audio/ogg">
-        </audio>
+    <div style="position: sticky; top: 0; z-index: 20;">
+      <img src="Images/Text_2.gif" style="width: 100%; height: 52px;">
+      <marquee width="100%" direction="left" scrollamount="10" scrolldelay="0" style="font-family: MMRock9; position: relative; bottom: 34px; z-index: 22; color: aliceblue; text-shadow: 3px 3px black;">I hope you're having fun here!!</marquee>
     </div>
-  </div>
+    <h1 class="texto">Welcome to my page!</h1>
+    <h4 style="text-align: center; position: relative;top: -20px;">-by Medii/Px</h4>
+    <div style="text-align: center; position: relative;top:-20px;">
+      <p>I enjoy making projects for fun ^-^!!</p>
+      <p>Check out my cool projects/places!!</p>
+    </div>
+    <div>
+      <img src="Images/X.gif" alt="Rockman X" width=105px style="position:absolute;top:412px;left: 23%;">
+      <img src="Images/Zero.gif" alt="ZERO" width="150px" style="position:absolute;top:366px;right: 22%; transform: scaleX(-1);">
+      <button onmouseover="playsound(1)" onclick="playsound(2); window.location.href='MMXPROTOBYPX';" style="position: absolute; left: 23%; top: 516; height: 5%;">
+          <h3>RockmanX.</h3>
+        </button>
+      <button onmouseover="playsound(1)" onclick="playsound(2); window.location.href='MMF2.5-PROJECTS(HTML)';" style="position: absolute; right: 23%; top: 516; height: 5%;">
+          <h3>OtherProjects</h3>
+        </button>
+      <img src="Images/textformat.png" style="position: relative;left:0; top:266; width: 100%;height: 5%;">
+      <h2 style="text-align: center; position: relative; top: 222px; color: antiquewhite;font-size: 14px; font-family: MMRock9; text-shadow:2px 2px black;";>Music to play while you're here!</h2>
+      <h4 style="text-align: center; position: relative; top: 220px">KOISHIDISCO</h4>
+      <div class="ct">
+          <audio controls loop autoplay style="position:relative;top:200px; left:0; right: 0; width:275px;">
+            <source src="Sounds/KOISHIDISCO.mp3" type="audio/mp3">
+          </audio>
+        </div>
+      <h4 style="text-align: center; position: relative; top: 220px">CHIRUMIRU CIRNO</h4>
+      <div class="ct">
+          <audio controls loop style="position:relative;top:200px; left:0; right: 0; width:275px;">
+            <source src="Sounds/CHIRUMIRU CIRNO.mp3" type="audio/mp3">
+          </audio>
+        </div>
+      <h4 style="text-align: center; position: relative; top: 220px">MMX - PASSWORD SCREEN</h4>
+      <div class="ct">
+          <audio controls loop style="position:relative;top:200px; left:0; right: 0; width:275px;">
+            <source src="Sounds/Main.ogg" type="audio/ogg">
+          </audio>
+        </div>
+      </div>
+    </div>
   <div class="ct">  
-    <h1 class="text">Important Stuff!</h1>
+    <h1 class="text">!</h1>
     <p>Please go support my partner's AMAZING project!!</p>
     <a href="https://discord.gg/6byvW2M3a4" target="_Blank">MariLINK's Official Discord Server.</a>
     <p class="text"></p>
-    <marquee width="63%" direction="left" scrollamount="10" scrolldelay="10">I'm not very smart but I try to use all my potential on my projects!!!</marquee>
-    <h2>Memories section >w< !!!</h2>
+  </div>
+  <div>
+    <img src="Images/textformat.png" style="position: relative;left:0; top:30; width: 100%;height: 4%;">
+    <marquee width="100%" direction="left" scrollamount="10" scrolldelay="4" style="position: sticky; top: 86.25%; left:0; color: aliceblue; text-decoration: wavy;">I'm not very smart but I try to use all my potential on my projects!!!</marquee>
+  </div>
+  <div class="ct" style="position: relative;top:100px;">  
+    <h2>Memories section!!!</h2>
     <p>Me Vs. Maril on Street Fighter III: 3rd Strike!!</p>
-    <img src="Images/pxryu_marilakuma.png" width="30%" alt="The day that my girlfriend landed a Raging Demon on me and did a Perfect!">
-    <p class="text">© 2025 Medii/Px. All rights... reserved?</p>
+    <img src="Images/pxryu_marilakuma.png" width="90%" alt="The day that my girlfriend landed a Raging Demon on me and did a Perfect!">
+    <p style="position: relative;top: 200%; line-height: 200px;text-align: center;">© 2025 Medii/Px. All rights... reserved?</p>
   </div>
 </body>
+
 </html>
